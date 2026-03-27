@@ -16,15 +16,15 @@ export default function ContactPage() {
   return (
     <div>
       <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <ol itemScope itemType="https://schema.org/BreadcrumbList" className="flex items-center space-x-2 text-sm text-text/60">
-          <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-            <Link href="/" itemProp="item" className="hover:text-text"><span itemProp="name">Home</span></Link>
-            <meta itemProp="position" content="1" />
+        <ol className="flex items-center space-x-2 text-sm text-text/60">
+          <li>
+            <Link href="/" className="hover:text-text"><span>Home</span></Link>
+            <meta content="1" />
           </li>
           <li><span>/</span></li>
-          <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-            <span itemProp="name" className="text-text font-medium">Contact</span>
-            <meta itemProp="position" content="2" />
+          <li>
+            <span className="text-text font-medium">Contact</span>
+            <meta content="2" />
           </li>
         </ol>
       </nav>
@@ -123,8 +123,8 @@ export default function ContactPage() {
           </div>
 
           <div
-            itemScope
-            itemType="https://schema.org/ContactPage"
+           
+           
             className="order-1 lg:order-2 bg-primary text-on-primary rounded-lg p-8 lg:p-10 space-y-8 h-fit"
           >
             <div>
@@ -136,7 +136,7 @@ export default function ContactPage() {
                   <a
                     href="tel:+31599512111"
                     className="text-lg sm:text-xl font-heading text-on-primary hover:text-on-primary/80 transition-colors"
-                    itemProp="telephone"
+                   
                   >
                     0599 - 512111
                   </a>
@@ -144,7 +144,7 @@ export default function ContactPage() {
 
                 <div>
                   <p className="font-heading text-sm text-on-primary/70 mb-2">Adres</p>
-                  <address className="font-body text-base not-italic text-on-primary" itemProp="address">
+                  <address className="font-body text-base not-italic text-on-primary">
                     1e Exloërmond
                   </address>
                 </div>
@@ -183,7 +183,7 @@ export default function ContactPage() {
               width="100%"
               height="450"
               style={{ border: "none" }}
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Locatie Koomans Makelaardij, 1e Exloërmond"

@@ -12,7 +12,7 @@ const headingFont = HeadingFont({
 
 const bodyFont = BodyFont({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "600"],
   display: "swap",
   variable: "--font-body",
 });

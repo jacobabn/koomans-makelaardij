@@ -1,4 +1,11 @@
 
+## [2026-03-27T02:24:33.868Z] Deploy Failed
+- Fixed: Deploy failed: Loading scopes…
+Searching for existing projects…
+Linked to jacobabns-projects/1774486849941-koomans-makelaardij (created .vercel and added it to .gitignore)
+Deploying jacobabns-projects/1774486849941-
+
+
 ## [2026-03-27T02:24:15.189Z] Finalization
 - Contrast fix: secondary on primary: 2.5:1 → 5.0:1 (darkened secondary from #555555 to #838383)
 

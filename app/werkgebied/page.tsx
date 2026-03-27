@@ -10,17 +10,17 @@ export default function WerkgebiedPage() {
   return (
     <div className="bg-background text-text">
       <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <ol itemScope itemType="https://schema.org/BreadcrumbList" className="flex items-center space-x-2 text-sm text-primary/60">
-          <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-            <Link href="/" itemProp="item" className="hover:text-primary transition-colors">
-              <span itemProp="name">Home</span>
+        <ol className="flex items-center space-x-2 text-sm text-primary/60">
+          <li>
+            <Link href="/" className="hover:text-primary transition-colors">
+              <span>Home</span>
             </Link>
-            <meta itemProp="position" content="1" />
+            <meta content="1" />
           </li>
           <li className="text-primary/40">/</li>
-          <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-            <span itemProp="name" className="text-primary font-medium font-heading">Werkgebied</span>
-            <meta itemProp="position" content="2" />
+          <li>
+            <span className="text-primary font-medium font-heading">Werkgebied</span>
+            <meta content="2" />
           </li>
         </ol>
       </nav>
@@ -184,57 +184,57 @@ export default function WerkgebiedPage() {
             Veelgestelde vragen over ons werkgebied
           </h2>
 
-          <div itemScope itemType="https://schema.org/FAQPage" className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question" className="bg-white rounded-lg p-8 border border-primary/10">
-              <h3 itemProp="name" className="text-xl font-heading font-bold text-primary mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-lg p-8 border border-primary/10">
+              <h3 className="text-xl font-heading font-bold text-primary mb-3">
                 In welke gemeenten werk je?
               </h3>
-              <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-                <p itemProp="text" className="font-body text-text/80">
+              <div>
+                <p className="font-body text-text/80">
                   Koomans Makelaardij is werkzaam in Borger-Odoorn, Emmen, Exloo, Drouwenerveen, 1e Exloërmond en Noord-Groningen. Dit is ons kernwerkgebied waar wij jarenlange ervaring en sterke lokale netwerken hebben.
                 </p>
               </div>
             </div>
 
-            <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question" className="bg-white rounded-lg p-8 border border-primary/10">
-              <h3 itemProp="name" className="text-xl font-heading font-bold text-primary mb-3">
+            <div className="bg-white rounded-lg p-8 border border-primary/10">
+              <h3 className="text-xl font-heading font-bold text-primary mb-3">
                 Bemiddelen jullie ook in agrarisch onroerend goed?
               </h3>
-              <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-                <p itemProp="text" className="font-body text-text/80">
+              <div>
+                <p className="font-body text-text/80">
                   Ja, agrarisch onroerend goed is één van onze sterke specialisaties. We bemiddelen in landbouwbedrijven, veebedrijven, groenteteeltbedrijven en landbouwgrond.
                 </p>
               </div>
             </div>
 
-            <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question" className="bg-white rounded-lg p-8 border border-primary/10">
-              <h3 itemProp="name" className="text-xl font-heading font-bold text-primary mb-3">
+            <div className="bg-white rounded-lg p-8 border border-primary/10">
+              <h3 className="text-xl font-heading font-bold text-primary mb-3">
                 Kan ik een taxatie aanvragen voor mijn woning of bedrijf?
               </h3>
-              <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-                <p itemProp="text" className="font-body text-text/80">
+              <div>
+                <p className="font-body text-text/80">
                   Zeker. Als NVM-taxateur voeren wij professionele taxaties uit voor woningen, agrarische bedrijven en grond. Bel ons of stuur een e-mail voor een vrijblijvend gesprek.
                 </p>
               </div>
             </div>
 
-            <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question" className="bg-white rounded-lg p-8 border border-primary/10">
-              <h3 itemProp="name" className="text-xl font-heading font-bold text-primary mb-3">
+            <div className="bg-white rounded-lg p-8 border border-primary/10">
+              <h3 className="text-xl font-heading font-bold text-primary mb-3">
                 Hoe lang duurt het om mijn woning te verkopen?
               </h3>
-              <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-                <p itemProp="text" className="font-body text-text/80">
+              <div>
+                <p className="font-body text-text/80">
                   Dit hangt af van de ligging, prijs en toestand van uw woning. In ons werkgebied hebben we een sterke markt en geïnteresseerde koper. Een orienterende schatting bespreken we graag met u.
                 </p>
               </div>
             </div>
 
-            <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question" className="bg-white rounded-lg p-8 border border-primary/10">
-<h3 itemProp="name" className="text-xl font-heading font-bold text-primary mb-3">
+            <div className="bg-white rounded-lg p-8 border border-primary/10">
+<h3 className="text-xl font-heading font-bold text-primary mb-3">
                 Werkt u ook samen met andere makelaars?
               </h3>
-              <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-                <p itemProp="text" className="font-body text-text/80">
+              <div>
+                <p className="font-body text-text/80">
                   Ja, als NVM-makelaar werken wij samen met een groot netwerk van collega-makelaars. Dit vergroot de kans op een succesvolle verkoop of aankoop voor onze klanten.
                 </p>
               </div>
