@@ -1,0 +1,404 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-primary;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl font-semibold;
+  }
+
+  p {
+    @apply leading-relaxed text-base sm:text-lg;
+  }
+
+  a {
+    @apply transition-colors duration-200 ease-out;
+  }
+
+  button {
+    @apply transition-all duration-200 ease-out cursor-pointer;
+  }
+
+  input, textarea, select {
+    @apply transition-colors duration-200 ease-out;
+  }
+}
+
+@layer components {
+  /* Button styles */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 ease-out inline-block text-center;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-on-primary hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-on-secondary hover:bg-secondary/90 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-on-primary focus-visible:ring-2 focus-visible:ring-accent;
+  }
+
+  /* Link removal from nav, footer, buttons */
+  nav a, nav a:hover, nav a:focus,
+  footer a, footer a:hover, footer a:focus,
+  .btn, .btn:hover, .btn:focus,
+  button, button:hover, button:focus,
+  a[class*="btn"], a[class*="btn"]:hover, a[class*="btn"]:focus,
+  header a, header a:hover, header a:focus {
+    @apply no-underline;
+  }
+
+  /* Inline text links — only in paragraphs and articles */
+  article a, .prose a, p a {
+    @apply  text-primary decoration-primary/40 underline-offset-2;
+  }
+
+  article a:hover, .prose a:hover, p a:hover {
+    @apply decoration-primary;
+  }
+
+  /* Card component */
+  .card {
+    @apply bg-white rounded-lg p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out;
+  }
+
+  .card:focus-within {
+    @apply shadow-md;
+  }
+
+  /* Focus visible ring utility */
+  .focus-ring {
+    @apply focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 outline-none;
+  }
+
+  /* Section padding */
+  .section {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  .section-full {
+    @apply w-full py-12 sm:py-16 lg:py-20;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  /* Divider */
+  .divider {
+    @apply border-t border-primary/20;
+  }
+
+  /* Image wrapper with gradient fallback */
+  .image-wrapper {
+    @apply relative bg-gradient-to-br from-accent/10 to-primary/5 overflow-hidden;
+  }
+
+  /* Hover lift interaction */
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-1 shadow-lg;
+  }
+
+  /* Breadcrumb styles */
+  .breadcrumb {
+    @apply flex flex-wrap items-center gap-2 text-sm sm:text-base mb-6;
+  }
+
+  .breadcrumb a {
+    @apply text-primary hover:text-primary/70 no- transition-colors;
+  }
+
+  .breadcrumb span {
+    @apply text-text/60;
+  }
+
+  /* Scrollbar hide utility */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Input and form styles */
+  input, textarea, select {
+    @apply bg-white text-text border border-primary/20 rounded-lg px-4 py-2 focus-visible:ring-2 focus-visible:ring-accent focus-visible:border-accent outline-none;
+  }
+
+  input::placeholder, textarea::placeholder {
+    @apply text-text/50;
+  }
+
+  label {
+    @apply block text-sm font-semibold text-primary mb-2;
+  }
+
+  /* Muted text */
+  .text-muted {
+    @apply text-text/70;
+  }
+
+  .text-muted-light {
+    @apply text-text/60;
+  }
+
+  /* Underline accent */
+  .underline-accent {
+    @apply relative inline-block;
+  }
+
+  .underline-accent::after {
+    @apply absolute bottom-0 left-0 w-full h-1 bg-accent;
+    content: '';
+  }
+}
+
+@layer utilities {
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-soft {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  /* Animation classes */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.5s ease-out forwards;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+
+  /* Delay utilities */
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .delay-600 {
+    animation-delay: 600ms;
+  }
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Responsive text sizing */
+  .text-responsive {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+
+  /* Opacity utilities for text */
+  .opacity-70 {
+    opacity: 0.7;
+  }
+
+  .opacity-60 {
+    opacity: 0.6;
+  }
+
+  .opacity-50 {
+    opacity: 0.5;
+  }
+
+  /* Aspect ratios */
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  .aspect-portrait {
+    aspect-ratio: 3 / 4;
+  }
+
+  /* Shadow utilities */
+  .shadow-soft {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .shadow-medium {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-lg-custom {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Gradient overlays */
+  .overlay-dark-gradient {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+  }
+
+  .overlay-fade {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  }
+
+  /* Typography utilities */
+  .letter-spacing-tight {
+    letter-spacing: -0.02em;
+  }
+
+  .letter-spacing-normal {
+    letter-spacing: 0;
+  }
+
+  .letter-spacing-wide {
+    letter-spacing: 0.05em;
+  }
+
+  /* Transition utilities */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .transition-fast {
+    @apply transition-all duration-150 ease-out;
+  }
+
+  .transition-slow {
+    @apply transition-all duration-500 ease-out;
+  }
+}
+/* FORCED: No underlines on nav, footer, buttons */
+nav a, nav a:hover, nav a:focus, nav a:active,
+footer a, footer a:hover, footer a:focus, footer a:active,
+header a, header a:hover, header a:focus, header a:active,
+.btn, .btn:hover, button a, button a:hover,
+a[class*="btn"], a[class*="btn"]:hover,
+a[class*="Button"], a[class*="Button"]:hover,
+a[class*="cta"], a[class*="cta"]:hover,
+a[class*="link"], a[class*="link"]:hover,
+a[class*="nav"], a[class*="nav"]:hover { text-decoration: none !important; }
+/* Only allow underline inside prose/article body text */
+.prose a, article p a { text-decoration: underline; text-underline-offset: 3px; }

@@ -1,0 +1,216 @@
+{
+  "company": {
+    "name": "Koomans Makelaardij",
+    "city": "1e Exloërmond",
+    "website": "https://www.koomansmakelaardij.nl",
+    "phone": "0599512111",
+    "email": "",
+    "address": "1e Exloërmond",
+    "tagline": "",
+    "openingHours": ""
+  },
+  "design": {
+    "colorScheme": "monochrome",
+    "colorStyle": "Ultra minimal",
+    "colors": {
+      "primary": "#111111",
+      "secondary": "#555555",
+      "accent": "#333333",
+      "text": "#111111",
+      "onPrimary": "#ffffff",
+      "onSecondary": "#ffffff"
+    },
+    "layout": "magazine",
+    "layoutDesc": "Editorial layout, mixed column widths, featured sections, storytelling flow",
+    "typography": {
+      "id": "outfit-source",
+      "style": "Tech-forward warm",
+      "heading": "Outfit",
+      "body": "Source Serif 4"
+    }
+  },
+  "seo": {
+    "titleFormat": "[Pagina Keyword] | Koomans Makelaardij — NVM Makelaar Drenthe",
+    "primaryKeywords": [
+      "makelaar Drenthe",
+      "agrarisch makelaar Drenthe",
+      "makelaar Borger-Odoorn",
+      "makelaar Emmen",
+      "NVM-makelaar Drenthe",
+      "taxateur Drenthe",
+      "agrarisch makelaar Groningen"
+    ],
+    "localKeywords": [
+      "woning verkopen Drouwenerveen",
+      "huis kopen Exloo",
+      "boerderij kopen Drenthe",
+      "landbouwgrond verkopen Drenthe",
+      "makelaar 1e Exloërmond",
+      "taxatie Borger-Odoorn",
+      "agrarisch onroerend goed Noord Nederland"
+    ],
+    "contentFocus": "Aggressive content expansion strategy: (1) Fix all critical SEO gaps — unique meta titles with location + keyword on every page, compelling meta descriptions (150-160 chars), proper H1 hierarchy on every page. (2) Create 6+ dedicated service pages with 500+ words each, naturally incorporating missing keywords. (3) Build 5+ local area landing pages targeting municipality-level searches. (4) Add structured data: LocalBusiness, RealEstateAgent, FAQPage, BreadcrumbList schemas. (5) Implement a blog/kennisbank section with articles like 'Boerderij kopen in Drenthe: waar moet u op letten?' and 'Landbouwgrond verkopen: stappenplan' to capture informational searches. (6) Eliminate all render-blocking resources — inline critical CSS, defer all JS, remove unused Realworks template bloat. (7) Target sub-1.5s LCP through image optimization, preloading, and modern hosting. (8) Mobile-first responsive design with touch-optimized navigation. (9) Internal linking strategy connecting area pages to service pages to property listings."
+  },
+  "pages": [
+    {
+      "path": "/",
+      "label": "Home"
+    },
+    {
+      "path": "/over-ons",
+      "label": "Over Ons"
+    },
+    {
+      "path": "/diensten",
+      "label": "Diensten"
+    },
+    {
+      "path": "/werkgebied",
+      "label": "Werkgebied"
+    },
+    {
+      "path": "/contact",
+      "label": "Contact"
+    }
+  ],
+  "buildPlan": {
+    "concept": "A monochrome editorial magazine-style website that positions Koomans Makelaardij as the authoritative rural and agricultural real estate specialist of Drenthe and Noord-Groningen, using stark black-and-white photography with dramatic typographic hierarchy to evoke the timeless character of the Dutch countryside landscape.",
+    "heroApproach": "Full-viewport cinematic hero with a desaturated aerial photograph of the Drenthe peatland landscape, overlaid with a semi-transparent charcoal gradient from the left. A bold oversized H1 in a tech-forward warm display font spans across two-thirds of the viewport in off-white, with a subtle parallax scroll effect. Below the headline, a compact dual-action search module (Woningaanbod / Agrarisch Aanbod) with pill-shaped toggles sits against the dark overlay. A thin horizontal rule and an animated scroll-down chevron complete the composition. No carousel — one powerful static image that loads instantly via optimized WebP.",
+    "colorUsage": "Ultra-minimal monochrome palette: primary background in warm white (#F7F5F2), primary text in near-black (#1A1A1A), accent dividers and hover states in a single warm charcoal (#3D3D3D). Interactive elements like buttons and links use a muted warm gray (#6B6560) that inverts to near-black on hover. Section alternation between warm white and a barely-there warm gray (#EDEBE8) creates visual rhythm without color. The only color accent is a single deep moss-green (#4A5A3C) used sparingly for active states and the NVM badge, subtly referencing the agricultural landscape identity.",
+    "uniqueElements": [
+      "Editorial-style 'Landschap & Vastgoed' storytelling section with mixed-width columns: a large featured property image beside a narrow text column with pull-quotes about rural living in Drenthe, mimicking a high-end architecture magazine spread",
+      "Interactive service comparison grid where Woningmakelaardij and Agrarische Makelaardij are presented as two parallel editorial columns with a vertical dividing line, allowing visitors to visually compare service offerings side-by-side like a magazine feature article",
+      "A monochrome animated counter strip showing key stats (jaren ervaring, verkochte woningen, hectare landbouwgrond bemiddeld, NVM-gecertificeerd) that triggers on scroll, rendered in oversized display typography against a dark charcoal background band",
+      "Typographic area map — instead of a traditional Google Map for service areas, a large-scale typographic composition where municipality names (Borger-Odoorn, Emmen, Exloo, Drouwenerveen) are arranged geographically in varying font weights, creating an artistic representation of their coverage area"
+    ]
+  },
+  "images": {
+    "total": 18,
+    "photos": 12,
+    "icons": 6,
+    "files": [
+      {
+        "path": "/images/logo-koomans-makelaardij-0.png",
+        "alt": "Logo Koomans Makelaardij",
+        "size": 491034,
+        "use": "general"
+      },
+      {
+        "path": "/images/homepage-2.jpg",
+        "alt": "",
+        "size": 296325,
+        "use": "general"
+      },
+      {
+        "path": "/images/homepage-3.png",
+        "alt": "",
+        "size": 192569,
+        "use": "general"
+      },
+      {
+        "path": "/images/homepage-4.jpg",
+        "alt": "",
+        "size": 269797,
+        "use": "general"
+      },
+      {
+        "path": "/images/homepage-5.jpg",
+        "alt": "",
+        "size": 252230,
+        "use": "general"
+      },
+      {
+        "path": "/images/homepage-6.png",
+        "alt": "",
+        "size": 44650,
+        "use": "general"
+      },
+      {
+        "path": "/images/homepage-7.jpg",
+        "alt": "",
+        "size": 4566,
+        "use": "general"
+      },
+      {
+        "path": "/images/homepage-9.jpg",
+        "alt": "",
+        "size": 19635,
+        "use": "general"
+      },
+      {
+        "path": "/images/funda-10.png",
+        "alt": "funda",
+        "size": 36026,
+        "use": "general"
+      },
+      {
+        "path": "/images/nvm-11.png",
+        "alt": "nvm",
+        "size": 30904,
+        "use": "general"
+      },
+      {
+        "path": "/images/nwwi-12.png",
+        "alt": "nwwi",
+        "size": 32447,
+        "use": "general"
+      },
+      {
+        "path": "/images/vastgoedcert-13.png",
+        "alt": "vastgoedcert",
+        "size": 192569,
+        "use": "general"
+      },
+      {
+        "path": "/images/og-image-14.png",
+        "alt": "og:image",
+        "size": 491034,
+        "use": "general"
+      },
+      {
+        "path": "/images/versie-789-56-527b0c42c-pub-css-dist-jqu-15.gif",
+        "alt": "",
+        "size": 1116,
+        "use": "general"
+      },
+      {
+        "path": "/images/versie-789-56-527b0c42c-datum-1774540102-16.png",
+        "alt": "",
+        "size": 315,
+        "use": "general"
+      },
+      {
+        "path": "/images/versie-789-56-527b0c42c-datum-1774540102-17.png",
+        "alt": "",
+        "size": 315,
+        "use": "general"
+      },
+      {
+        "path": "/images/versie-789-56-527b0c42c-datum-1774540102-18.png",
+        "alt": "",
+        "size": 185,
+        "use": "general"
+      },
+      {
+        "path": "/images/versie-789-56-527b0c42c-datum-1774540102-19.gif",
+        "alt": "",
+        "size": 4178,
+        "use": "general"
+      }
+    ]
+  },
+  "content": {
+    "services": [],
+    "testimonials": 0,
+    "stats": 0,
+    "areas": [
+      "1e Exloërmond"
+    ]
+  },
+  "deployment": {
+    "github": "https://github.com/jacobabn/koomans-makelaardij",
+    "domain": "https://koomans-makelaardij.abn.company",
+    "builtBy": "A Brand New Company (ABN)",
+    "builtAt": "2026-03-27T02:20:53.575Z"
+  }
+}
